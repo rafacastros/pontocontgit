@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Ponto Eletrônico | Contmatic Phoenix</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/contmatic.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav first-level metismenu" id="side-menu">
+                    <li class="nav-heade logo-menu">
+                        <div class="dropdown profile-element">
+                            <span><img src="img/logo-ponto.png" alt="Ponto Eletronico"></span>
+                            <input type="text" placeholder="Buscar" class="form-control" id="search-menu">
+                            <span id="box_icone_busca">
+                                <i id="icone_busca" class="fa fa-search"></i>
+                            </span>
+                        </div>
+                        <div class="logo-element">
+                            <img src="img/logo-phoenix.png" alt="">
+                        </div>
+                    </li>
+                    <li class="">
+                        <a href="#"><i class="fa fa-tachometer"></i> <span class="nav-label">Painel de Controle</span></a>
+                    </li>
+
+                    <!-- CADASTROS -->
+
+                    <li>
+                        <a href="#"><i class="fa fa-user-plus"></i> <span class="nav-label">Cadastros</span><span class="fa fa-chevron-right"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="#">Empresa<i class="fa fa-chevron-right"></i></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li><a href="#">Empresa</a></li>
+                                    <li><a href="#">Departamento</a></li>
+                                    <li><a href="#">Seção</a></li>
+                                    <li><a href="#">Setor</a></li>
+                                    <li><a href="#">Calendário</a></li>
+                                    <li><a href="#">Parâmetros</a></li>
+                                    <li><a href="#">Rep</a></li>
+                                    <li><a href="#">Cadastro Contador</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Funcionários<i class="fa fa-chevron-right"></i></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li><a href="#">Funcionário</a></li>
+                                    <li><a href="#">Cargos</a></li>
+                                    <li><a href="#">Horários</a></li>
+                                    <li><a href="#">Regra de Apontamento</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Eventos<i class="fa fa-chevron-right"></i></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li><a href="#">Eventos Contmatic</a></li>
+                                    <li><a href="#">Eventos Usuários</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- FUNCIONALIDADES / AÇÕES -->
+
+                    <li>
+                        <a href="#"><i class="fa fa-cog"></i> <span class="nav-label">Ações</span><span class="fa fa-chevron-right"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="#">Justificativas<i class="fa fa-chevron-right"></i></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li><a href="#">Motivo Justificativa</a></li>
+                                    <li><a href="#">Justificativa Pendente</a></li>
+                                    <li><a href="#">Cadastro Justificativa</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Banco de Horas<i class="fa fa-chevron-right"></i></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li><a href="#">Lançar Horas</a></li>
+                                    <li><a href="#">Pagar Horas</a></li>
+                                    <li><a href="#">Fechamento de Banco de Horas</a></li>
+                                    <li><a href="#">Adiantamento de Banco de Horas</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Movimentação<i class="fa fa-chevron-right"></i></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li><a href="#">Férias</a></li>
+                                    <li><a href="#">Afastamento</a></li>
+                                    <li><a href="#">Desligamento</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- APURACAO DO PONTO -->
+
+                    <li>
+                        <a href="#"><i class="fa fa-pencil-square-o"></i> <span class="nav-label">Apuração do Ponto</span><span class="fa fa-chevron-right"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="#">Cálculo Mensal</a></li>
+                            <li><a href="#">Manutenção<i class="fa fa-chevron-right"></i></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li><a href="#">Motivos de Marcação</a></li>
+                                    <li><a href="#">Manutenção do Ponto</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Fechamento do Período</a></li>
+                        </ul>
+                    </li>
+
+
+
+                    <!-- RELATÓRIOS -->
+
+                    <li>
+                        <a href="#"><i class="fa fa-file-text-o"></i> <span class="nav-label">Relatórios</span><span class="fa fa-chevron-right"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="#">Relatórios<i class="fa fa-chevron-right"></i></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li><a href="#">Justificativas</a></li>
+                                    <li><a href="#">Saldo Banco de Horas</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Arquivos Portaria<i class="fa fa-chevron-right"></i></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li><a href="#">AFDT</a></li>
+                                    <li><a href="#">ACJEF</a></li>
+                                    <li><a href="#">Espelho de Ponto</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- UTILITÁRIO -->
+
+                    <li>
+                        <a href="#"><i class="fa fa-wrench"></i> <span class="nav-label">Utilitário</span><span class="fa fa-chevron-right"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="#">Exportação</a></li>
+                            <li><a href="#">Importação<i class="fa fa-chevron-right"></i></a>
+                                <ul class="nav nav-third-level collapse">
+                                    <li><a href="#">Setores</a></li>
+                                    <li><a href="#">Departamentos</a></li>
+                                    <li><a href="#">Cargos</a></li>
+                                    <li><a href="#">Seções</a></li>
+                                    <li><a href="#">Horários Contratuais</a></li>
+                                    <li><a href="#">Horários</a></li>
+                                    <li><a href="#">Funcionários</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-question-circle-o"></i> <span class="nav-label">Ajuda</span> </a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+            <div class="">
+                <nav class="navbar navbar-static-top white-bg" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom form-nav" method="post" action="#">
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default btn-empresa" type="button">Empresa</button>
+                                </span>
+                                <input type="text" placeholder="Buscar" class="form-control input-empresa" name="top-search" list="top-searchs" id="top-search">
+                                <datalist id="top-searchs">
+                                    <option value="Teste1">test1
+                                    <option value="Teste2">test2
+                                    <option value="Teste3">test3
+                                    <option value="teste4">test4
+                                    <option value="teste5">test5
+                                </datalist>
+                            </div>
+                            <!-- <div class="form-group">
+                                <input type="text" placeholder="Buscar" class="form-control" name="top-search" id="top-search">
+                            </div> -->
+                        </form>
+                        <ul class="nav navbar-top-links navbar-right nav-alerts">
+                            <li class="dropdown">
+                                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-hourglass-start"></i>
+                                    <!-- <span class="label label-warning">16</span> -->
+                                </a>
+                                <ul class="dropdown-menu dropdown-messages">
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a href="profile.html" class="pull-left">
+                                                <img alt="image" class="img-circle" src="img/a7.jpg">
+                                            </a>
+                                            <div>
+                                                <small class="pull-right">46h ago</small>
+                                                <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                                <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+
+
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
+                                    <i class="fa fa-bell"></i>
+                                    <!-- <span class="label label-warning">16</span> -->
+                                </a>
+                                <ul class="dropdown-menu dropdown-messages">
+                                    <li>
+                                        <div class="dropdown-messages-box">
+                                            <a href="profile.html" class="pull-left">
+                                                <img alt="image" class="img-circle" src="img/a7.jpg">
+                                            </a>
+                                            <div>
+                                                <small class="pull-right">46h ago</small>
+                                                <strong>Mike Loreipsum</strong> started following <strong>Monica Smith</strong>. <br>
+                                                <small class="text-muted">3 days ago at 7:58 pm - 10.06.2014</small>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="divider"></li>
+
+
+                                </ul>
+                            </li>
+
+                            <li>
+                                <div class="dropdown user-nav">
+                                    <span>
+                                        <img alt="image" class="img-circle" src="img/profile_small.jpg">
+                                     </span>
+                                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                        <span class=" m-t-xs"> 
+                                                <strong class="font-bold">Lorem Ipsum<b class="caret"></b></strong>
+                                            </span>
+                                    </a>
+                                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                                        <li><a href="#">Aletrar Senha</a></li>
+                                        <li><a href="#">Alterar Foto</a></li>
+                                        <li><a href="#">Limite Contratual</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="#">Sair</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <!-- <li>
+                                <a href="#">
+                                    <i class="fa fa-sign-out"></i> Log out
+                                </a>
+                            </li> -->
+                        </ul>
+                    </div>
+
+
+                </nav>
+            </div>
+
+            <!-- BREADCRUMB -->
+
+            <div class="row wrapper">
+                <div class="col-lg-12">
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.html">Painel de Controle</a>
+                        </li>
+                        <li>
+                            Empresa
+                        </li>
+                        <li class="active">
+                            <strong>Empresa</strong>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- FIM BREADCRUMB -->
+            <!-- TITLE PAGE -->
+
+            <div class="row wrapper">
+                <div class="col-lg-12 white-bg">
+                    <h1 class="tl-page">Cadastro de Empresas</h1>
+                    <ul class="tl-page navbar-top-links navbar-right">
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-plus-circle"></i> Novo
+                            </a>
+                        </li> |
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-list"></i> Listar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- FIM TITLE PAGE -->
+            <!-- CONTEUDO -->
+
+
+            <div class="row wrapper conteudo">
+                <div class="col-lg-12 white-bg">
+                    <h2 class="sub-page">Lista de Empresas</h2>
+                    <input type="text" class="form-control input-sm m-b-xs" id="filter" placeholder="Buscar">
+                </div>
+
+                <div class="col-lg-12 white-bg">
+                    <table class="footable table table-stripped footable-loaded default" data-page-size="8" data-filter="#filter">
+                        <thead>
+                            <tr>
+                                <th class="footable-visible footable-sortable footable-first-column">Rendering engine<span class="footable-sort-indicator"></span></th>
+                                <th class="footable-visible footable-sortable footable-sorted-desc">Browser<span class="footable-sort-indicator"></span></th>
+                                <th data-hide="phone,tablet" class="footable-sortable footable-visible" style="">Platform(s)<span class="footable-sort-indicator"></span></th>
+                                <th data-hide="phone,tablet" class="footable-sortable footable-visible" style="">Engine version<span class="footable-sort-indicator"></span></th>
+                                <th data-hide="phone,tablet" class="footable-sortable footable-visible footable-last-column" style="">CSS grade<span class="footable-sort-indicator"></span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="gradeA footable-even" style="">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Webkit</td>
+                                <td class="footable-visible">Safari 3.0</td>
+                                <td style="" class="footable-visible">OSX.4+</td>
+                                <td class="center footable-visible" style="">522.1</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="footable-row-detail" style="display: none;">
+                                <td class="footable-row-detail-cell" colspan="2">
+                                    <div class="footable-row-detail-inner">
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">Platform(s):</div>
+                                            <div class="footable-row-detail-value">OSX.4+</div>
+                                        </div>
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">Engine version:</div>
+                                            <div class="footable-row-detail-value">522.1</div>
+                                        </div>
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">CSS grade:</div>
+                                            <div class="footable-row-detail-value">A</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="gradeA footable-odd" style="">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Webkit</td>
+                                <td class="footable-visible">Safari 2.0</td>
+                                <td style="" class="footable-visible">OSX.4+</td>
+                                <td class="center footable-visible" style="">419.3</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="footable-row-detail" style="display: none;">
+                                <td class="footable-row-detail-cell" colspan="2">
+                                    <div class="footable-row-detail-inner">
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">Platform(s):</div>
+                                            <div class="footable-row-detail-value">OSX.4+</div>
+                                        </div>
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">Engine version:</div>
+                                            <div class="footable-row-detail-value">419.3</div>
+                                        </div>
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">CSS grade:</div>
+                                            <div class="footable-row-detail-value">A</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="gradeA footable-even" style="">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Webkit</td>
+                                <td class="footable-visible">Safari 1.3</td>
+                                <td style="" class="footable-visible">OSX.3</td>
+                                <td class="center footable-visible" style="">312.8</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="gradeA footable-odd" style="">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Webkit</td>
+                                <td class="footable-visible">S60</td>
+                                <td style="" class="footable-visible">S60</td>
+                                <td class="center footable-visible" style="">413</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="gradeC footable-even" style="">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Misc</td>
+                                <td class="footable-visible">PSP browser</td>
+                                <td style="" class="footable-visible">PSP</td>
+                                <td class="center footable-visible" style="">-</td>
+                                <td class="center footable-visible footable-last-column" style="">C</td>
+                            </tr>
+                            <tr class="gradeA footable-odd" style="">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Presto</td>
+                                <td class="footable-visible">Opera for Wii</td>
+                                <td style="" class="footable-visible">Wii</td>
+                                <td class="center footable-visible" style="">-</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="footable-row-detail" style="display: none;">
+                                <td class="footable-row-detail-cell" colspan="2">
+                                    <div class="footable-row-detail-inner">
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">Platform(s):</div>
+                                            <div class="footable-row-detail-value">Wii</div>
+                                        </div>
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">Engine version:</div>
+                                            <div class="footable-row-detail-value">-</div>
+                                        </div>
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">CSS grade:</div>
+                                            <div class="footable-row-detail-value">A</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="gradeA footable-even" style="">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Presto</td>
+                                <td class="footable-visible">Opera 9.5</td>
+                                <td style="" class="footable-visible">Win 88+ / OSX.3+</td>
+                                <td class="center footable-visible" style="">-</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="footable-row-detail" style="display: none;">
+                                <td class="footable-row-detail-cell" colspan="2">
+                                    <div class="footable-row-detail-inner">
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">Platform(s):</div>
+                                            <div class="footable-row-detail-value">Win 88+ / OSX.3+</div>
+                                        </div>
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">Engine version:</div>
+                                            <div class="footable-row-detail-value">-</div>
+                                        </div>
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">CSS grade:</div>
+                                            <div class="footable-row-detail-value">A</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="gradeA footable-odd" style="">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Presto</td>
+                                <td class="footable-visible">Opera 9.2</td>
+                                <td style="" class="footable-visible">Win 88+ / OSX.3+</td>
+                                <td class="center footable-visible" style="">-</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="footable-row-detail" style="display: none;">
+                                <td class="footable-row-detail-cell" colspan="2">
+                                    <div class="footable-row-detail-inner">
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">Platform(s):</div>
+                                            <div class="footable-row-detail-value">Win 88+ / OSX.3+</div>
+                                        </div>
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">Engine version:</div>
+                                            <div class="footable-row-detail-value">-</div>
+                                        </div>
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">CSS grade:</div>
+                                            <div class="footable-row-detail-value">A</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="gradeA footable-even" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Presto</td>
+                                <td class="footable-visible">Opera 9.0</td>
+                                <td style="" class="footable-visible">Win 95+ / OSX.3+</td>
+                                <td class="center footable-visible" style="">-</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="gradeA footable-odd" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Presto</td>
+                                <td class="footable-visible">Opera 8.5</td>
+                                <td style="" class="footable-visible">Win 95+ / OSX.2+</td>
+                                <td class="center footable-visible" style="">-</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="gradeA footable-even" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Presto</td>
+                                <td class="footable-visible">Opera 8.0</td>
+                                <td style="" class="footable-visible">Win 95+ / OSX.2+</td>
+                                <td class="center footable-visible" style="">-</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="gradeA footable-odd" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Presto</td>
+                                <td class="footable-visible">Opera 7.5</td>
+                                <td style="" class="footable-visible">Win 95+ / OSX.2+</td>
+                                <td class="center footable-visible" style="">-</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="gradeA footable-even" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Presto</td>
+                                <td class="footable-visible">Opera 7.0</td>
+                                <td style="" class="footable-visible">Win 95+ / OSX.1+</td>
+                                <td class="center footable-visible" style="">-</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="gradeA footable-odd" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Webkit</td>
+                                <td class="footable-visible">OmniWeb 5.5</td>
+                                <td style="" class="footable-visible">OSX.4+</td>
+                                <td class="center footable-visible" style="">420</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="footable-row-detail" style="display: none;">
+                                <td class="footable-row-detail-cell" colspan="2">
+                                    <div class="footable-row-detail-inner">
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">Platform(s):</div>
+                                            <div class="footable-row-detail-value">OSX.4+</div>
+                                        </div>
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">Engine version:</div>
+                                            <div class="footable-row-detail-value">420</div>
+                                        </div>
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">CSS grade:</div>
+                                            <div class="footable-row-detail-value">A</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="gradeA footable-even" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Presto</td>
+                                <td class="footable-visible">Nokia N800</td>
+                                <td style="" class="footable-visible">N800</td>
+                                <td class="center footable-visible" style="">-</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="gradeA footable-odd" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Presto</td>
+                                <td class="footable-visible">Nintendo DS browser</td>
+                                <td style="" class="footable-visible">Nintendo DS</td>
+                                <td class="center footable-visible" style="">8.5</td>
+                                <td class="center footable-visible footable-last-column" style="">C/A<sup>1</sup></td>
+                            </tr>
+                            <tr class="gradeA footable-even" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Gecko</td>
+                                <td class="footable-visible">Netscape Navigator 9</td>
+                                <td style="" class="footable-visible">Win 98+ / OSX.2+</td>
+                                <td class="center footable-visible" style="">1.8</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="gradeA footable-odd" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Misc</td>
+                                <td class="footable-visible">NetFront 3.4</td>
+                                <td style="" class="footable-visible">Embedded devices</td>
+                                <td class="center footable-visible" style="">-</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="gradeA footable-even" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Misc</td>
+                                <td class="footable-visible">NetFront 3.1</td>
+                                <td style="" class="footable-visible">Embedded devices</td>
+                                <td class="center footable-visible" style="">-</td>
+                                <td class="center footable-visible footable-last-column" style="">C</td>
+                            </tr>
+                            <tr class="gradeX footable-odd" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Misc</td>
+                                <td class="footable-visible">Lynx</td>
+                                <td style="" class="footable-visible">Text only</td>
+                                <td class="center footable-visible" style="">-</td>
+                                <td class="center footable-visible footable-last-column" style="">X</td>
+                            </tr>
+                            <tr class="gradeX footable-even" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Misc</td>
+                                <td class="footable-visible">Links</td>
+                                <td style="" class="footable-visible">Text only</td>
+                                <td class="center footable-visible" style="">-</td>
+                                <td class="center footable-visible footable-last-column" style="">X</td>
+                            </tr>
+                            <tr class="gradeA footable-odd" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>KHTML</td>
+                                <td class="footable-visible">Konqureror 3.5</td>
+                                <td style="" class="footable-visible">KDE 3.5</td>
+                                <td class="center footable-visible" style="">3.5</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="gradeA footable-even" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>KHTML</td>
+                                <td class="footable-visible">Konqureror 3.3</td>
+                                <td style="" class="footable-visible">KDE 3.3</td>
+                                <td class="center footable-visible" style="">3.3</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="gradeC footable-odd" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>KHTML</td>
+                                <td class="footable-visible">Konqureror 3.1</td>
+                                <td style="" class="footable-visible">KDE 3.1</td>
+                                <td class="center footable-visible" style="">3.1</td>
+                                <td class="center footable-visible footable-last-column" style="">C</td>
+                            </tr>
+                            <tr class="gradeA footable-even" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Webkit</td>
+                                <td class="footable-visible">iPod Touch / iPhone</td>
+                                <td style="" class="footable-visible">iPod</td>
+                                <td class="center footable-visible" style="">420.1</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="gradeC footable-odd" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Tasman</td>
+                                <td class="footable-visible">Internet Explorer 5.2</td>
+                                <td style="" class="footable-visible">Mac OS 8-X</td>
+                                <td class="center footable-visible" style="">1</td>
+                                <td class="center footable-visible footable-last-column" style="">C</td>
+                            </tr>
+                            <tr class="gradeC footable-even" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Tasman</td>
+                                <td class="footable-visible">Internet Explorer 5.1</td>
+                                <td style="" class="footable-visible">Mac OS 7.6-9</td>
+                                <td class="center footable-visible" style="">1</td>
+                                <td class="center footable-visible footable-last-column" style="">C</td>
+                            </tr>
+                            <tr class="gradeX footable-odd" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Tasman</td>
+                                <td class="footable-visible">Internet Explorer 4.5</td>
+                                <td style="" class="footable-visible">Mac OS 8-9</td>
+                                <td class="center footable-visible" style="">-</td>
+                                <td class="center footable-visible footable-last-column" style="">X</td>
+                            </tr>
+                            <tr class="gradeA footable-even" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Trident</td>
+                                <td class="footable-visible">Internet Explorer 5.5
+                                </td>
+                                <td style="" class="footable-visible">Win 95+</td>
+                                <td class="center footable-visible" style="">5.5</td>
+                                <td class="center footable-visible footable-last-column" style="">A</td>
+                            </tr>
+                            <tr class="gradeC footable-odd" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Trident</td>
+                                <td class="footable-visible">Internet Explorer 5.0
+                                </td>
+                                <td style="" class="footable-visible">Win 95+</td>
+                                <td class="center footable-visible" style="">5</td>
+                                <td class="center footable-visible footable-last-column" style="">C</td>
+                            </tr>
+                            <tr class="gradeX footable-even" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Trident</td>
+                                <td class="footable-visible">Internet Explorer 4.0
+                                </td>
+                                <td style="" class="footable-visible">Win 95+</td>
+                                <td class="center footable-visible" style="">4</td>
+                                <td class="center footable-visible footable-last-column" style="">X</td>
+                            </tr>
+                            <tr class="footable-row-detail" style="display: none;">
+                                <td class="footable-row-detail-cell" colspan="2">
+                                    <div class="footable-row-detail-inner">
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">Platform(s):</div>
+                                            <div class="footable-row-detail-value">Win 95+</div>
+                                        </div>
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">Engine version:</div>
+                                            <div class="footable-row-detail-value">4</div>
+                                        </div>
+                                        <div class="footable-row-detail-row">
+                                            <div class="footable-row-detail-name">CSS grade:</div>
+                                            <div class="footable-row-detail-value">X</div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="gradeC footable-odd" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Misc</td>
+                                <td class="footable-visible">IE Mobile</td>
+                                <td style="" class="footable-visible">Windows Mobile 6</td>
+                                <td class="center footable-visible" style="">-</td>
+                                <td class="center footable-visible footable-last-column" style="">C</td>
+                            </tr>
+                            <tr class="gradeX footable-even" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Misc</td>
+                                <td class="footable-visible">Dillo 0.8</td>
+                                <td style="" class="footable-visible">Embedded devices</td>
+                                <td class="center footable-visible" style="">-</td>
+                                <td class="center footable-visible footable-last-column" style="">X</td>
+                            </tr>
+                            <tr class="gradeU footable-odd" style="display: none;">
+                                <td class="footable-visible footable-first-column"><span class="footable-toggle"></span>Other browsers</td>
+                                <td class="footable-visible">All others</td>
+                                <td style="" class="footable-visible">-</td>
+                                <td class="center footable-visible" style="">-</td>
+                                <td class="center footable-visible footable-last-column" style="">U</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5" class="footable-visible">
+                                    <ul class="pagination pull-right">
+                                        <li class="footable-page-arrow disabled"><a data-page="first" href="#first">«</a></li>
+                                        <li class="footable-page-arrow disabled"><a data-page="prev" href="#prev">‹</a></li>
+                                        <li class="footable-page active"><a data-page="0" href="#">1</a></li>
+                                        <li class="footable-page"><a data-page="1" href="#">2</a></li>
+                                        <li class="footable-page"><a data-page="2" href="#">3</a></li>
+                                        <li class="footable-page"><a data-page="3" href="#">4</a></li>
+                                        <li class="footable-page"><a data-page="4" href="#">5</a></li>
+                                        <li class="footable-page-arrow"><a data-page="next" href="#next">›</a></li>
+                                        <li class="footable-page-arrow"><a data-page="last" href="#last">»</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+
+
+            <!-- FIM CONTEUDO -->
+
+
+            <div class="footer">
+                <div class="pull-right">
+                    10GB of <strong>250GB</strong> Free.
+                </div>
+                <div>
+                    <strong>Copyright</strong> Example Company &copy; 2014-2017
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    
+    <!-- FooTable -->
+    <script src="js/plugins/footable/footable.all.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+
+            $('.footable').footable();
+            $('.footable2').footable();
+
+        });
+
+    </script>
+
+</body>
+
+</html>
